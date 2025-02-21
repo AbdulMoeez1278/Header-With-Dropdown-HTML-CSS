@@ -1,0 +1,114 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(17px);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+  width: 300px;
+}
+
+.sidebar .logo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px 15px;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 40%;
+}
+
+.logo h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-left: 15px;
+  display: none;
+}
+
+.sidebar:hover .logo h2 {
+  display: block;
+}
+
+.sidebar .sidebar-menu {
+  list-style: none;
+  margin-top: 20px;
+  overflow-y: auto;
+  /* height: calc(100% - 140px); */
+}
+
+.sidebar-menu li {
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.sidebar-menu li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0 40 104);
+}
+
+.sidebar-menu h4 {
+  color: #222;
+  font-weight: 500;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.sidebar:hover .sidebar-menu h4 {
+  display: block;
+}
+
+.sidebar-menu hr {
+  margin: 10px 8px;
+  border: 1px solid #4c4c4c;
+}
+
+.sidebar-menu li span {
+  padding: 12px 10px;
+}
+
+.sidebar-menu li a {
+  padding: 10px;
+  color: #000;
+  display: none;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+  color: white;
+}
+
+.sidebar:hover .sidebar-menu li a {
+  display: block;
+}

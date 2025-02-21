@@ -1,0 +1,271 @@
+/* <!-- 30 - 01 - 2025  THURSDAY --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.burger {
+  display: none;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.sidebar {
+  display: none;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav .ulBar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav .ulBar .underline:hover {
+  text-decoration: underline #f4a261 3px;
+}
+
+.nav .ulBar li .active {
+  text-decoration: underline #f4a261 3px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li a svg {
+  margin-left: 5px;
+  transform: rotate(180deg);
+  transition: transform 150ms ease;
+}
+
+.nav ul li a:hover > svg {
+  transform: rotate(360deg);
+  transition: transform 150ms ease;
+}
+
+/* .dropdown {
+  align-items: center;
+} */
+
+.inventoryHeight {
+  height: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 90%;
+  padding: 20px;
+  height: auto;
+  left: 5%;
+  top: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  border-radius: 10px;
+  background-image: url("hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dropdown-content ul {
+  list-style: none;
+}
+
+.dropdown-content ul li {
+  width: 19vw;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content ul li a {
+  justify-content: space-between;
+  color: black;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover > svg {
+  transform: rotate(360deg);
+  transition: transform 150ms ease;
+}
+
+.dropdown-content a svg {
+  transform: rotate(180deg);
+}
+
+/* .dropdown-content a svg:hover {
+    transform: rotate(180deg);
+    transition: transform 150ms ease;
+} */
+
+/* .dropdown-content ul li a:hover {
+  color: #f4a261;
+  transform: rotate(360deg);
+  background-color: rgb(0 40 104);
+} */
+
+.nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdownColumns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.call-button {
+  display: inline-block;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 14px 40px;
+  font-size: 16px;
+  border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-left: 150px;
+}
+
+/* Dropdown Images */
+
+.column img {
+  width: 320px;
+  height: 280px;
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+.column:hover img {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(1.05);
+}
+
+/* Nested Dropdowns inside the Drpdown */
+.nestedDropdown1 {
+  display: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.nestedDropdown1 li {
+  color: white;
+}
+
+.nestedDropdown1 li a:hover {
+  color: white;
+  background-color: rgb(0 40 104);
+  border-radius: 6px;
+}
+
+.dropdownColumns ul li:hover .nestedDropdown1 {
+  display: block;
+}
+
+/* SIDEBAR STYLING */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.sidebar .logo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 20px 85px;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 40%;
+}
+
+.sidebar .sidebar-menu {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar-menu li {
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.sidebar-menu li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0 40 104);
+}
+
+.sidebar-menu li a {
+  padding: 20px 80px;
+  color: white;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+  color: white;
+}
