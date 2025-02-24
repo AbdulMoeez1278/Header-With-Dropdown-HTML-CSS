@@ -29,10 +29,16 @@ This project is a **fully responsive header** with dropdown navigation built usi
 
 ## 📂 Folder Structure  
 
-Responsive-Header-With-Dropdown/ │── index.html # Main HTML file
+Responsive-Header-With-Dropdown/ 
+
+│── index.html # Main HTML file
+
 │── style.css # CSS file for styling
+
 │── responsive.css # CSS file for responsiveness
+
 │── assets/ # (Optional) Folder for images/icons
+
 │── README.md # Project documentation
 
 ---
