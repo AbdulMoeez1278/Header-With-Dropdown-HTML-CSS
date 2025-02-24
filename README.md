@@ -86,8 +86,11 @@ Multi-Level Dropdowns: Extend functionality to allow deeper navigation menus.
 Contributions are welcome! If you have ideas or improvements, feel free to fork the repository and submit a pull request.
 
 📬 Connect with Me
+
 GitHub: github.com/AbdulMoeez1278
+
 LinkedIn: linkedin.com/in/abdulmoeez1278
+
 Email: abdulmoeez1278@gmail.com
 
 ⭐ Don't forget to star the repository if you find it helpful! ⭐
