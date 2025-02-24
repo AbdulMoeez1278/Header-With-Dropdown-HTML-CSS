@@ -65,10 +65,15 @@ Responsive-Header-With-Dropdown/
    ```bash
    git clone https://github.com/AbdulMoeez1278/Responsive-Header-With-Dropdown.git
 Navigate to the project folder:
+
 bash
+
 Copy
+
 Edit
+
 cd Responsive-Header-With-Dropdown
+
 Open the index.html file in a browser to view the project.
 
 📌 Future Enhancements
@@ -76,6 +81,7 @@ JavaScript Integration: Add JavaScript for enhanced dropdown interactions and an
 Dark Mode Support: Provide a dark mode toggle for better user accessibility.
 ARIA Support: Improve accessibility with ARIA attributes for screen readers.
 Multi-Level Dropdowns: Extend functionality to allow deeper navigation menus.
+
 🤝 Contribution
 Contributions are welcome! If you have ideas or improvements, feel free to fork the repository and submit a pull request.
 
